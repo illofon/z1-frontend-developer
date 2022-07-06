@@ -1,8 +1,13 @@
-# Getting Started with Create React App
+# ID Verification Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An attempt to make a digital camera reading using React.
 
-## Available Scripts
+
+Node used: 16.13.2
+React version: 18.2.0 (woohoo!)
+Bootstrapped with create-react-app
+
+## Run project
 
 In the project directory, you can run:
 
@@ -14,33 +19,61 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn test`
+(yes, i left it untouched, at least this part only)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `yarn testsuite`
 
-### `yarn build`
+Runs the testsuite browser window. You need to install devDependencies for that.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## A bit of explanation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Since the API was a fake (sad-emoji here) i simulated a fake too. It's just an interval set which takes photos each 2 seconds. If the outcome is valid, it prints it. If not, it just prints it red.
+I have commentaries over the important parts of the code. For example i tried to use styled components in Webcam, which i was not able to make it work along redux state vars, so i opted
+to use the old-style style{{}} prop. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+I tried to be solid with the inVision styles along styled-components. I rarely used it since i was using MUI all the time along with a created theme. It interesting because it sets random classes and it's
+far hardest to check any prop when you inspect from a navigator. I enjoyed, to be honest.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Is this your best?
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Maybe not but i want to think i gave it. Since i was always alone in my previous companies i learned all about googling, asking, and trying to apply good methodologies. But one thing is for certain: i am really not sure what is certain. What i mean: maybe a thing that i am applying since i was born was a complete failure and i had no one to tell me in the right moment.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+If you find something like this i deeply apologize. I am ALWAYS open to listen and learn how to do it better.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Hey, why did you use redux-saga?
 
-## Learn More
+It was more sort of a personal challenge than everything. I wanted to test myself using also Typescript, which i never used together with redux-saga. In these situations in which we have multiple calls and handlings, Sagas shine, so i opted for using sagas. Thunks tend to have a lot of inner callbacks making code unreadable the more stuff they do.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+It is so easy to handle some new requests or states incoming multiple times with the use of saga helpers, such as takeEvery(sort like a thunk) or takeLatest(if an action is detonated multiple times it takes only the latest, ensuring proper responses).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+I often use it whenever i have the possibility because i think its the best guideline for async stuff, maintainability and performance wise out there. Using generators functions makes our memory clean as a brand new mirror.
+
+## What about testing?
+
+I used cypress
+
+## WTF is Cypress
+
+The alternative to Selenium. What it matters that the product is working, so i tried to add a basic flux test. Its an End to End type.
+
+## How do i run it?
+
+With `yarn testsuite`. Its browser based. You click on "Specs" and run the only one.
+
+## Used libraries
+
+[redux](https://es.redux.js.org/).
+[react-redux](https://react-redux.js.org/).
+[redux-saga](https://redux-saga.js.org).
+[axios](https://axios-http.com/es/docs/intro)
+[react-webcam](httpshttps://www.npmjs.com/package/react-webcam)
+
+
+## Credits
+
+To wikipedia-commons for the Ajax metal loader gif.
+To my dog for cheering me up whenever i was stuck with the project.
+To the cookie i ate when i was writing this.
+To favicon.cc for the favicon
+And you, for your patience.
