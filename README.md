@@ -3,13 +3,17 @@
 An attempt to make a digital camera reading using React.
 
 
-Node used: 16.13.2
-React version: 18.2.0 (woohoo!)
-Bootstrapped with create-react-app
+Node used: 16.13.2 \
+React version: 18.2.0 (woohoo!) \
+Bootstrapped with create-react-app \
 
 ## Run project
 
 In the project directory, you can run:
+
+### `yarn`
+
+Installs all the dependencies. Needed to move forward :) (make account of the node used version. I strongly suggest nvm to manage this.)
 
 ### `yarn start`
 
@@ -63,11 +67,11 @@ With `yarn testsuite`. Its browser based. You click on "Specs" and run the only 
 
 ## Used libraries
 
-[redux](https://es.redux.js.org/).
-[react-redux](https://react-redux.js.org/).
-[redux-saga](https://redux-saga.js.org).
-[axios](https://axios-http.com/es/docs/intro).
-[react-webcam](httpshttps://www.npmjs.com/package/react-webcam).
+[redux](https://es.redux.js.org/). \
+[react-redux](https://react-redux.js.org/).\
+[redux-saga](https://redux-saga.js.org).\
+[axios](https://axios-http.com/es/docs/intro).\
+[react-webcam](https://www.npmjs.com/package/react-webcam). \
 
 
 ## Credits
