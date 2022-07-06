@@ -39,7 +39,7 @@ far hardest to check any prop when you inspect from a navigator. I enjoyed, to b
 
 Maybe not but i want to think i gave it. Since i was always alone in my previous companies i learned all about googling, asking, and trying to apply good methodologies. But one thing is for certain: i am really not sure what is certain. What i mean: maybe a thing that i am applying since i was born was a complete failure and i had no one to tell me in the right moment.
 
-If you find something like this i deeply apologize. I am ALWAYS open to listen and learn how to do it better.
+If you find something like this i deeply apologize. I am ALWAYS open to listen and learn how to do it better. Please answer me with your upgrades, i will be glad to apply them.
 
 ## Hey, why did you use redux-saga?
 
@@ -66,8 +66,8 @@ With `yarn testsuite`. Its browser based. You click on "Specs" and run the only 
 [redux](https://es.redux.js.org/).
 [react-redux](https://react-redux.js.org/).
 [redux-saga](https://redux-saga.js.org).
-[axios](https://axios-http.com/es/docs/intro)
-[react-webcam](httpshttps://www.npmjs.com/package/react-webcam)
+[axios](https://axios-http.com/es/docs/intro).
+[react-webcam](httpshttps://www.npmjs.com/package/react-webcam).
 
 
 ## Credits

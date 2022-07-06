@@ -41,14 +41,25 @@ export const TakingPhotoSection = (props:any):JSX.Element => {
 const StyledSection = styled.section`
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to top, #141c26bf, #141c26bf), url(${takingPhotoBg}) no-repeat top center;
     height: 100vh;
-    background-size: cover;
     padding-top: 100px;
     align-items: center;
     z-index: 2;
     text-align: center;
     margin: 0 auto;
+    &:before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        background: linear-gradient(to top, #141c26bf, #141c26bf), url(${takingPhotoBg}) no-repeat top center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        filter: blur(4px);
+      }
 `
 
 const SecondaryButton = styled(Button)`
